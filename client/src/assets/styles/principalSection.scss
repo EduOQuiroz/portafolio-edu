@@ -1,0 +1,388 @@
+.principal {
+  display: grid;
+  height: 130vh;
+  width: 100%;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  .photo_principal{
+    position:relative;
+    top:150px;
+    left: 70px;
+    height: 200px;
+    width: 200px;
+    img{
+      animation: opacityphoto 10s infinite ease-in-out;
+      width: 350px;
+      filter: drop-shadow(2px 2px 10px rgba(233, 50, 4, 0.589));
+      -webkit-filter: drop-shadow(2px 2px 10px rgb(47, 207, 228));
+}
+  }
+  &__principalImage {
+    grid-area: 1/3/2/6;
+    display: flex;
+    position: relative;
+
+    .triangle {
+      width: 150px;
+      height: 100px;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      opacity: .6;
+      animation: triangleanimation;
+      -webkit-animation: triangleanimation;
+      animation-duration: 10s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-delay: 2s;
+    }
+
+    .triangle:hover {
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
+      -webkit-transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -ms-transition: opacity 1s ease-in-out;
+      -o-transition: opacity 1s ease-in-out;
+    }
+
+
+
+    .triangle1 {
+      width: 200px;
+      height: 200px;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      background-color: #ff0000;
+      position: absolute;
+      right: 80%;
+      top: 235px;
+      z-index: 10;
+    }
+
+    .triangle2 {
+      opacity: .9;
+      position: absolute;
+      right: 66%;
+      top: 140px;
+      width: 300px;
+      height: 300px;
+      background-image: url(../images/RightT.jpeg);
+      background-size: 600px;
+      background-position: 60% 90%;
+      background-repeat: no-repeat;
+      clip-path: polygon(50% 100%, 0 0, 100% 0);
+      z-index: 10;
+    }
+
+    .triangle3 {
+      width: 200px;
+      height: 200px;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      background-color: $black2;
+      position: absolute;
+      right: 60%;
+      top: 170px;
+      z-index: 40;
+    }
+
+    .triangle4 {
+      clip-path: polygon(50% 0%, 80% 50%, 50% 100%, 20% 50%);
+      position: absolute;
+      right: 23%;
+      top: 30px;
+      background-image: url(../images/centerT.jpg);
+      background-size: 300px;
+      background-position: 45% 50%;
+      width: 550px;
+      height: 600px;
+      z-index: 30;
+    }
+
+    .triangle5 {
+      width: 200px;
+      height: 200px;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      background-color: #db1f1f;
+      position: absolute;
+      right: 7%;
+      top: 180px;
+      z-index: 10;
+      clip-path: polygon(50% 100%, 0 0, 100% 0);
+
+    }
+
+    .triangle6 {
+      position: absolute;
+      right: 8%;
+      top: 180px;
+      width: 300px;
+      height: 300px;
+      background-image: url(../images/leaftT.png);
+      background-size: 600px;
+      background-position: 50% 75%;
+      background-repeat: no-repeat;
+      z-index: 30;
+    }
+
+    .triangle7 {
+      width: 200px;
+      height: 200px;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      background-color: $black2;
+      position: absolute;
+      right: 27%;
+      top: 270px;
+      clip-path: polygon(50% 100%, 0 0, 100% 0);
+      z-index: 40;
+    }
+  }
+
+
+
+
+  &__content {
+    grid-area: 1/1/2/3;
+    height: 160px;
+    display: flex;
+    position: relative;
+    
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    line-height: 35px;
+    color: #ecf0f1;
+
+      .figure1 {
+        position: absolute;
+        top: 120px;
+        left: 500px;
+        width: 400px;
+        height: 400px;
+        opacity: 1;
+        animation: squareRotateM 30s infinite ease-in-out;
+        animation-delay: 1;
+                &__icon{
+                  animation: squareScaleOpacity 10s infinite ease-in-out;
+                  animation-delay: 1;
+                  stroke: url(#gradientM);
+
+}
+      }
+      .figure2 {
+        position: absolute;
+        top: 200px;
+        left: 900px;
+        width: 400px;
+        height: 400px;
+        opacity: 1;
+        transform: rotate(180deg);
+        animation: squareRotateM 30s infinite ease-in-out;
+        animation-direction: reverse;
+        animation-delay: 1;
+        &__icon{
+          animation: squareScaleOpacity 10s infinite ease-in-out;
+          animation-delay: 1;
+          stroke: url(#gradientM2);
+        }
+      }
+    
+    
+    &__container {
+      position: absolute;
+      top:100px;
+      left: 50px;
+      font-weight: 600;
+      overflow: hidden;
+      height: 40px;
+      padding: 0 40px;
+  
+      &:before {
+        content: '[';
+        left: 0;
+      }
+  
+      &:after {
+        content: ']';
+        position: absolute;
+        right: 0;
+      }
+  
+      &:after, &:before {
+        position: absolute;
+        top: 0;
+        color: #16a085;
+        font-size: 42px;
+        line-height: 40px;
+        animation: opacity;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+}
+      &__text {
+        display: inline;
+        float: left;
+        margin: 0;
+      }
+  
+      &__list {
+        margin-top: 0;
+        padding-left: 70px;
+        text-align: left;
+        list-style: none;
+        animation: change;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+        animation-timing-function: ease-in-out;
+  
+        &__item {
+          line-height:40px;
+          margin:0;
+        }
+      }
+    }
+    
+  }
+  
+}
+
+
+
+
+@keyframes triangleanimation {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: .8;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@keyframes change {
+  0%, 12.66%, 100% { transform:translate3d(0,0,0);}
+  16.66%, 29.32% { transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+@keyframes divmove {
+  0% {
+    border-radius: 41% 59% 51% 49% / 54% 35% 65% 46% ;
+    -webkit-border-radius: 41% 59% 51% 49% / 54% 35% 65% 46% ;
+    -moz-border-radius: 41% 59% 51% 49% / 54% 35% 65% 46% ;
+    -ms-border-radius: 41% 59% 51% 49% / 54% 35% 65% 46% ;
+    -o-border-radius: 41% 59% 51% 49% / 54% 35% 65% 46% ;
+}
+
+  50% {
+    border-radius: 47% 52% 54% 51% / 57% 31% 68% 56%;
+    -webkit-border-radius: 47% 52% 54% 51% / 57% 31% 68% 56%;
+    -moz-border-radius: 47% 52% 54% 51% / 57% 31% 68% 56%;
+    -ms-border-radius: 47% 52% 54% 51% / 57% 31% 68% 56%;
+    -o-border-radius: 47% 52% 54% 51% / 57% 31% 68% 56%;
+}
+
+  100% {
+    border-radius: 41% 59% 51% 49% / 54% 35% 65% 46% ;
+    -webkit-border-radius: 41% 59% 51% 49% / 54% 35% 65% 46% ;
+    -moz-border-radius: 41% 59% 51% 49% / 54% 35% 65% 46% ;
+    -ms-border-radius: 41% 59% 51% 49% / 54% 35% 65% 46% ;
+    -o-border-radius: 41% 59% 51% 49% / 54% 35% 65% 46% ;
+}
+}
+@keyframes divmove2 {
+  0%{
+    border-radius: 52% 48% 38% 62% / 43% 50% 50% 57%;
+    -webkit-border-radius: 52% 48% 38% 62% / 43% 50% 50% 57%;
+    -moz-border-radius: 52% 48% 38% 62% / 43% 50% 50% 57%;
+    -ms-border-radius: 52% 48% 38% 62% / 43% 50% 50% 57%;
+    -o-border-radius: 52% 48% 38% 62% / 43% 50% 50% 57%;
+}  
+  50%{
+    border-radius: 57% 43% 33% 67% / 48% 45% 55% 52%;
+    -webkit-border-radius: 57% 43% 33% 67% / 48% 45% 55% 52%;
+    -moz-border-radius: 57% 43% 33% 67% / 48% 45% 55% 52%;
+    -ms-border-radius: 57% 43% 33% 67% / 48% 45% 55% 52%;
+    -o-border-radius: 57% 43% 33% 67% / 48% 45% 55% 52%;
+}  
+  100%{
+    border-radius: 52% 48% 38% 62% / 43% 50% 50% 57%;
+    -webkit-border-radius: 52% 48% 38% 62% / 43% 50% 50% 57%;
+    -moz-border-radius: 52% 48% 38% 62% / 43% 50% 50% 57%;
+    -ms-border-radius: 52% 48% 38% 62% / 43% 50% 50% 57%;
+    -o-border-radius: 52% 48% 38% 62% / 43% 50% 50% 57%;
+}  
+}
+
+@keyframes squareRotateM {
+  0%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+  100%{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+}
+
+@keyframes squareScaleOpacity {
+  0%{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    opacity: 1;
+}
+  25%{
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+    opacity: .2;
+}
+  50%{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    opacity: 1;
+}
+  75%{
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+    opacity: .2;
+  }
+  100%{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    opacity: 1;
+}
+}
+
+@keyframes opacityphoto {
+  0%, 100%{opacity: 1}
+  30%, 60%{opacity: 0}
+}
