@@ -647,3 +647,166 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 480px){
+  .proyects {
+    overflow-x: hidden;
+    &__art1{
+      .figure1{
+        overflow-x: hidden;
+        transform: scale(.5);
+        -webkit-transform: scale(.5);
+        -moz-transform: scale(.5);
+        -ms-transform: scale(.5);
+        -o-transform: scale(.5);
+}
+      &__image{
+        top: 0px;
+        left: 10px;
+        img{
+          width: 350px;
+        }
+      }
+      &__container{
+        width: 335px;
+        top: 250px;
+        left: 10px;
+        &__title{
+          top: 30px;
+          left: 2px;
+          width: 305px;
+          left: 15px;
+        }
+        &__content{
+          width: 305px;
+          left: 15px;
+          top: 50px;
+        }
+        &__button{
+          top: 80px;
+          left: 120px;
+        }
+      }
+    }
+
+    &__art2{
+      .figure1{
+        overflow-x: hidden;
+        transform: scale(.5);
+        -webkit-transform: scale(.5);
+        -moz-transform: scale(.5);
+        -ms-transform: scale(.5);
+        -o-transform: scale(.5);
+}
+      &__image{
+        top: 0px;
+        left: 10px;
+        img{
+          width: 350px;
+        }
+      }
+      &__container{
+        width: 335px;
+        top: 370px;
+        left: 10px;
+        &__title{
+          top: 30px;
+          left: 2px;
+          width: 305px;
+          left: 15px;
+        }
+        &__content{
+          width: 305px;
+          left: 15px;
+          top: 50px;
+        }
+        &__button{
+          top: 80px;
+          left: 120px;
+        }
+      }
+    }
+
+    &__art3{
+      .figure1{
+        overflow-x: hidden;
+        transform: scale(.5);
+        -webkit-transform: scale(.5);
+        -moz-transform: scale(.5);
+        -ms-transform: scale(.5);
+        -o-transform: scale(.5);
+}
+      &__image{
+        top: 0px;
+        left: 10px;
+        img{
+          width: 350px;
+        }
+      }
+      &__container{
+        width: 335px;
+        top: 290px;
+        left: 10px;
+        &__title{
+          top: 30px;
+          left: 2px;
+          width: 305px;
+          left: 15px;
+        }
+        &__content{
+          width: 305px;
+          left: 15px;
+          top: 50px;
+        }
+        &__button{
+          top: 80px;
+          left: 120px;
+        }
+      }
+    }
+
+    &__art4{
+      .figure1{
+        overflow-x: hidden;
+        transform: scale(.5);
+        -webkit-transform: scale(.5);
+        -moz-transform: scale(.5);
+        -ms-transform: scale(.5);
+        -o-transform: scale(.5);
+}
+      &__image{
+        top: 0px;
+        left: 10px;
+        img{
+          width: 350px;
+        }
+      }
+      &__container{
+        width: 335px;
+        top: 310px;
+        left: 10px;
+        &__title{
+          top: 30px;
+          left: 2px;
+          width: 305px;
+          left: 15px;
+        }
+        &__content{
+          width: 305px;
+          left: 15px;
+          top: 50px;
+        }
+        &__button{
+          top: 80px;
+          left: 120px;
+        }
+        &__button1{
+          top: 100px;
+          left: 120px;
+        }
+      }
+    }
+    
+  }
+
+}

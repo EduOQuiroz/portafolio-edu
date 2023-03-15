@@ -386,3 +386,85 @@
   0%, 100%{opacity: 1}
   30%, 60%{opacity: 0}
 }
+
+@media (max-width: 480px) {
+  body{
+    overflow-x: hidden;
+    .principal{
+      display: flex;
+      width: 300px;
+      justify-content: center;
+      align-content: center;
+      justify-items: center;
+      &__principalImage{
+        .triangle{
+          transform: scale(.7);
+          -webkit-transform: scale(.7);
+          -moz-transform: scale(.7);
+          -ms-transform: scale(.7);
+          -o-transform: scale(.7);
+  }
+        .triangle1{
+          top: 242px;
+          left: -227px;
+        }
+        .triangle2{
+          top: 450px;
+          left: -275px;
+        }
+        .triangle3{
+          top: 227px;
+          left: -255px;
+        }
+        .triangle4{
+          top: 164px;
+          left: -334px;
+          
+}
+        .triangle5{
+          top: 502px;
+          left: -110px;
+        }
+        .triangle6{
+          top: 184px;
+          left: -162px;
+        }
+        .triangle7{
+          top: 516px;
+          left: -86px;
+        }
+      }
+      &__content{
+        font-size: 18px;
+        line-height: 40px;
+        &__container{
+          top: 40px;
+          left: -5%;
+          width: 320px;
+          &__list{
+            padding-left: 50px;
+            width: 270px;
+          }
+        }
+        .figure1{
+          width: 200px;
+          height: 200px;
+          top: 584px;
+          left: 15px;
+        }
+        .figure2{
+          width: 200px;
+          height: 200px;
+          top: 130px;
+          left: 22px;
+        }
+        .photo_principal{
+          top: 180px;
+          left: -8%;
+          z-index: 10000;
+        }
+      }
+    }
+  }
+  
+  }
